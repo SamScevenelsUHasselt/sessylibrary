@@ -35,10 +35,8 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
         
-      - run: pushd frontend
-      - run: npm install
+      - run: npm install frontend
       - run: mkdir dist
-      - run: popd
       
       - run: gradle dependencies
       
