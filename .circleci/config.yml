@@ -37,7 +37,7 @@ jobs:
 
       - run: gradle dependencies
       
-      - run: frontend/npm install
+      - run: npm install frontend
       
       - save_cache:
           paths:
