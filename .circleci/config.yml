@@ -35,8 +35,6 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
         
-      - run: nvm install 12.10.0
-      - run: nvm use 12.10.0
       - run: pushd frontend
       - run: npm install
       - run: mkdir dist
