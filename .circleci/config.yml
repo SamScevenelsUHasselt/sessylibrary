@@ -36,7 +36,9 @@ jobs:
             - v1-dependencies-
 
       - run: gradle dependencies
-
+      
+      - run: frontend/npm install
+      
       - save_cache:
           paths:
             - ~/.gradle
